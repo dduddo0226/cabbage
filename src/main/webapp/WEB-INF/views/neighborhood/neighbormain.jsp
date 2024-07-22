@@ -35,7 +35,7 @@
                     <article class="col hood-box-con box-left">
                         <div class="row">
                             <div class="col col-8">
-                                <a href="nbdetail.shm?idx=${list[i].idx}">
+                                <a href="neighbor/nbdetail?idx=${list[i].idx}">
                                     <h5>${list[i].title}</h5>
                                     <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
                                     <span>${list[i].nickName}</span>

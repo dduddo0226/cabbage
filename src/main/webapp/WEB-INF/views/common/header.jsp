@@ -46,7 +46,7 @@
 			<ul>
 				<li><a href="home.shm">홈</a></li>
 				<li><a href="secondhand">중고거래</a></li>
-				<li><a href="neighborhood.shm">동네생활</a></li>
+				<li><a href="neighbor">동네생활</a></li>
 			</ul>
 		</div>
 		<div class="col-6 util">
