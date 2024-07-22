@@ -39,12 +39,12 @@
 <header class="container">
 	<div class="row">
 		<div class="col-6 menu">
-			<a href="home.shm" id="logo">
+			<a href="/" id="logo">
 			<img alt="logo" src="${path}/resources/img/logo.png" class="logo-img">
 			양배추
 			</a>
 			<ul>
-				<li><a href="home.shm">홈</a></li>
+				<li><a href="/">홈</a></li>
 				<li><a href="secondhand">중고거래</a></li>
 				<li><a href="neighbor">동네생활</a></li>
 			</ul>
