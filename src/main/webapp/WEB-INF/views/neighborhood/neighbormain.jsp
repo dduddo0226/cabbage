@@ -8,6 +8,7 @@
     <title>양배추와 함께하는 동네 생활</title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 <main>
     <div class="hood-box container">
         <ul class="hood-nav">
@@ -85,5 +86,6 @@
 
     </div>
 </main>
+<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 </body>
 </html>
