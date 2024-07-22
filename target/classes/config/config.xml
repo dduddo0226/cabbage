@@ -2,7 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.cabbage.spring.board.dto.nbBoardDTO" alias="neighborhood"/>
-		<typeAlias type="com.cabbage.spring.board.dto.shBoardDTO" alias="secondhand"/>
+		<typeAlias type="com.cabbage.spring.neighborhood.dto.neighborhood" alias="neighborhood"/>
+		<typeAlias type="com.cabbage.spring.secondhand.dto.secondhand" alias="secondhand"/>
 	</typeAliases>
 </configuration>

@@ -1,4 +1,4 @@
-package com.cabbage.spring.board.dto;
+package com.cabbage.spring.neighborhood.dto;
 
 import java.util.Date;
 
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class nbBoardDTO {
+public class neighborhood {
 	private int idx;
 	private String nickName;
 	private String title;
