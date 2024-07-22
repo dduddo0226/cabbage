@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
+<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 <main>
             <section class="top-banner">
                 <div class="top-banner-content container">
@@ -143,3 +143,4 @@
             </section>
 
         </main>
+<jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>
