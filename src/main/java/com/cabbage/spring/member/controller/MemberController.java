@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 
 public class MemberController {
-
-	@GetMapping("/login")
-	public String loginpage() {
-
-		return "login/loginpage";
-	}
-
-	@GetMapping("/memberjoin")
-	public String memberJoin() {
-
-		return "login/memberjoin";
-	}
+//
+//	@GetMapping("/login")
+//	public String loginpage() {
+//
+//		return "login/loginpage";
+//	}
+//
+//	@GetMapping("/memberjoin")
+//	public String memberJoin() {
+//
+//		return "login/memberjoin";
+//	}
 }
