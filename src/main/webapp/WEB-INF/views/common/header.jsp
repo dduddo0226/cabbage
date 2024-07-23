@@ -51,7 +51,7 @@
 		<div class="col-6 util">
 			<ul>
 				<li><a href="login"><i class="fi fi-rs-user"></i> </a></li>
-				<li><a href="memberjoin"><i class="fi fi-rs-user-add"></i>
+				<li><a href="joinMember"><i class="fi fi-rs-user-add"></i>
 				</a></li>
 			</ul>
 		</div>
