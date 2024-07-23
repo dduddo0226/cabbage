@@ -39,20 +39,18 @@
 <header class="container">
 	<div class="row">
 		<div class="col-6 menu">
-			<a href="/" id="logo">
-			<img alt="logo" src="${path}/resources/img/logo.png" class="logo-img">
-			양배추
+			<a href="home" id="logo"> <img alt="logo"
+				src="${path}/resources/img/logo.png" class="logo-img"> 양배추
 			</a>
 			<ul>
-				<li><a href="/">홈</a></li>
+				<li><a href="home">홈</a></li>
 				<li><a href="secondhand">중고거래</a></li>
 				<li><a href="neighbor">동네생활</a></li>
 			</ul>
 		</div>
 		<div class="col-6 util">
 			<ul>
-				<li><a href="login.shm"><i class="fi fi-rs-user"></i>
-				</a></li>
+				<li><a href="login.shm"><i class="fi fi-rs-user"></i> </a></li>
 				<li><a href="memberjoin.shm"><i class="fi fi-rs-user-add"></i>
 				</a></li>
 			</ul>
