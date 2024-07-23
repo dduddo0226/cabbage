@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 
-
+<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 <main class="container login">
 	<div class="row">
 		<div class="col-4 login-box">
@@ -38,4 +38,4 @@
 	</div>
 
 </main>
-
+<jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>
