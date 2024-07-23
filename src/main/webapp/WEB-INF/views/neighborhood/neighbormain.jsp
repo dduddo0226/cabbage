@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,8 +50,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img src="img/${list[i].img}" alt=""
-                                                             class="hood-box-img">
+                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img
+                                        src="${path}/resources/img/${list[i].img}" alt=""
+                                        class="hood-box-img">
                                 </a>
                             </div>
                         </div>
@@ -73,8 +75,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img src="img/${list[i].img}" alt=""
-                                                             class="hood-box-img">
+                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img
+                                        src="${path}/resources/img/${list[i].img}" alt=""
+                                        class="hood-box-img">
                                 </a>
                             </div>
                         </div>
@@ -86,6 +89,6 @@
 
     </div>
 </main>
-<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>
 </body>
 </html>

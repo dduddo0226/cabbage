@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class neighborhood {
+public class Neighborhood {
 	private int idx;
 	private String nickName;
 	private String title;
