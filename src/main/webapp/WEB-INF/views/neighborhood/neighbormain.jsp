@@ -10,85 +10,90 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
-<main>
-    <div class="hood-box container">
-        <ul class="hood-nav">
-            <li>
-                <button class="hood-nav-button">인기글</button>
-            </li>
-            <li>
-                <button class="hood-nav-button">맛집</button>
-            </li>
-            <li>
-                <button class="hood-nav-button">동네친구</button>
-            </li>
-            <li>
-                <button class="hood-nav-button">생활/편의</button>
-            </li>
-            <li>
-                <button class="hood-nav-button">분실/실종</button>
-            </li>
-            <li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
-        </ul>
-        <section class="container text-center hood-box-list">
-            <c:forEach var="i" begin="0" end="${list.size()-1}">
-                <c:if test="${i%2==0}">
-                    <div class="row">
-                    <article class="col hood-box-con box-left">
+<c:if test="${empty list}">
+    <h2>시스템오류가 발생했습니다.</h2>
+</c:if>
+<c:if test="${!empty list}">
+    <main>
+        <div class="hood-box container">
+            <ul class="hood-nav">
+                <li>
+                    <button class="hood-nav-button">인기글</button>
+                </li>
+                <li>
+                    <button class="hood-nav-button">맛집</button>
+                </li>
+                <li>
+                    <button class="hood-nav-button">동네친구</button>
+                </li>
+                <li>
+                    <button class="hood-nav-button">생활/편의</button>
+                </li>
+                <li>
+                    <button class="hood-nav-button">분실/실종</button>
+                </li>
+                <li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
+            </ul>
+            <section class="container text-center hood-box-list">
+                <c:forEach var="i" begin="0" end="${list.size()-1}">
+                    <c:if test="${i%2==0}">
                         <div class="row">
-                            <div class="col col-8">
-                                <a href="neighbor/nbdetail?idx=${list[i].idx}">
-                                    <h5>${list[i].title}</h5>
-                                    <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
-                                    <span>${list[i].nickName}</span>
-                                </a>
-                                <div class="hood-box-counts">
-                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
-                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
-                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
-                                </a>
+                        <article class="col hood-box-con box-left">
+                            <div class="row">
+                                <div class="col col-8">
+                                    <a href="nbdetail?idx=${list[i].idx}">
+                                        <h5>${list[i].title}</h5>
+                                        <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
+                                        <span>${list[i].nickName}</span>
+                                    </a>
+                                    <div class="hood-box-counts">
+                                        <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
+                                        </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
+                                    </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="nbdetail?idx=${list[i].idx}"> <img
+                                            src="${path}/resources/img/${list[i].img}" alt=""
+                                            class="hood-box-img">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col">
-                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img
-                                        src="${path}/resources/img/${list[i].img}" alt=""
-                                        class="hood-box-img">
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </c:if>
-                <c:if test="${i%2==1}">
-                    <article class="col hood-box-con">
-                        <div class="row">
-                            <div class="col col-8">
-                                <a href="nbdetail.shm?idx=${list[i].idx}">
-                                    <h5>${list[i].title}</h5>
-                                    <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
-                                    <span>${list[i].nickName}</span>
-                                </a>
-                                <div class="hood-box-counts">
-                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
-                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
-                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
-                                </a>
+                        </article>
+                    </c:if>
+                    <c:if test="${i%2==1}">
+                        <article class="col hood-box-con">
+                            <div class="row">
+                                <div class="col col-8">
+                                    <a href="nbdetail?idx=${list[i].idx}">
+                                        <h5>${list[i].title}</h5>
+                                        <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
+                                        <span>${list[i].nickName}</span>
+                                    </a>
+                                    <div class="hood-box-counts">
+                                        <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
+                                        </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
+                                    </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="nbdetail?idx=${list[i].idx}"> <img
+                                            src="${path}/resources/img/${list[i].img}" alt=""
+                                            class="hood-box-img">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col">
-                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img
-                                        src="${path}/resources/img/${list[i].img}" alt=""
-                                        class="hood-box-img">
-                                </a>
-                            </div>
+                        </article>
                         </div>
-                    </article>
-                    </div>
-                </c:if>
-            </c:forEach>
-        </section>
+                    </c:if>
+                </c:forEach>
+            </section>
 
-    </div>
-</main>
+        </div>
+    </main>
+</c:if>
 <jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>
 </body>
 </html>
