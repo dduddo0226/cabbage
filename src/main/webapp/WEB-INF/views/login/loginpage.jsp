@@ -29,7 +29,7 @@
 				</div>
 				<div class="login-joinbtn">
 					<p>회원이 아니신가요?</p>
-					<button type="button" onclick="">
+					<button type="button" onclick="location.href='memberjoin'">
 						<strong>회원가입</strong>
 					</button>
 				</div>
