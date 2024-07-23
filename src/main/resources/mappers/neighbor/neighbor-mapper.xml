@@ -4,7 +4,11 @@
 <!--namespace를 잘못 쓰는 바람에 1시간 날려버린 사람 나야나 나야나~-->
 
 <mapper namespace="com.cabbage.spring.neighborhood.mapper.NeighborMapper">
-    <select id="getAllList" resultType="Neighborhood">
-        SELECT * FROM NBBOARD
+    <select id="selectAllList" resultType="NeighborBoard">
+        SELECT * FROM NBBOARD ORDER BY IDX DESC
+    </select>
+    
+    <select id="selectByIdx" parameterType="int" resultType="NeighborBoard">
+        SELECT * FROM NBBOARD WHERE IDX = #{idx}
     </select>
 </mapper>
